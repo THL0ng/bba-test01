@@ -10,13 +10,18 @@ const characters = [
     { name: "Princess Daisy", level: 10, health: 900},
 ];
 
-let characterPowerUp = characters.map(char => {
-    return {
-        name: char.name.toUpperCase(),
-        level: char.level * 2,
-        health: char.health * 1.5
-    };
-});
+function createCharacter(characterList) {
+    return characterList.map(char => {
+        return {
+            name: char.name.toUpperCase(),
+            level: char.level * 2,
+            health: char.health * 1.5
+        };
+    });
+}
+
+
+let characterPowerUp = createCharacter(characters);
 console.log(characterPowerUp);
 let possibleWinners = characterPowerUp.filter(char => char.health > 1000);
 console.log(possibleWinners);
