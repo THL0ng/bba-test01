@@ -11,4 +11,4 @@ console.log('The total number of coins collected is: ' + sum);
 let average = sum / 3;
 console.log('The average number of coins collected is: ' + average);
 let remainder = sum % 3;
-console.log('Số coin dư khi chia tổng số coin cho 3 là: ' + remainder);
+console.log(`Số coin dư khi chia tổng số coin cho 3 là: ${remainder}`);
